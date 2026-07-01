@@ -1,0 +1,67 @@
+/* 
+.box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background-color: blue;
+}
+
+
+.flex{
+    flex:wrap;
+
+}
+
+/* .container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+} */
+
+/* .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 250px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(167, 195, 212);
+} */ */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
