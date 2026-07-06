@@ -61,7 +61,78 @@ th {
     background-color: rgb(167, 195, 212);
 } */ */
 
-.grid{
+/* .grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+} */
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    /* /* justify-content: center; */
+    /* align-items: center;  */
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+    position: relative;
+    overflow: hidden;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    /* border-radius: 50%; */
+    position: absolute;
+    top: 50px;
+    
+    left: 0;
+    opacity: 100%;
+
+    /* Animation */
+    animation-name: moveCircle;
+    animation-duration: 4s;      /* Time */
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moveCircle{
+    0%{
+        left: 0;
+        opacity: 0.3;
+        transform: scale(1);
+    }
+
+    50%{
+        opacity: 1;
+        transform: scale(1.2);
+        background-color: royalblue;
+    }
+
+    100%{
+        left: 600px;
+        opacity: 0.3;
+        transform: scale(1);
+        background-color: limegreen;
+    }
 }
